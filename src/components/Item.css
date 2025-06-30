@@ -1,0 +1,71 @@
+.item {
+  border: transparent;
+  background-color: #AAAAAA;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  aspect-ratio: 2 / 1;
+  margin-bottom: 10px;
+  box-shadow: inset 1px 1px #fff, inset -1px -1px black;
+  justify-content: space-between;
+}
+
+.content {
+  margin: 5px;
+  font-size: 20px;
+  cursor: text;
+}
+
+.title {
+  background-color: #000080;
+  color: white;
+  display:flex;
+  border: transparent;
+  width: auto;
+  box-sizing: border-box;
+  margin: 3px;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+
+}
+
+
+#closebtn {
+  margin-left: auto;
+  cursor: pointer;
+  background-color: #AAAAAA;
+  border: transparent;
+  margin-right: 3px;
+  box-shadow: inset 1px 1px #fff, inset -1px -1px black;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+#closebtn:active {
+  background-color: #888888;
+}
+
+#itemicon {
+  padding: 2px
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin: 5px;
+  gap: 3px;
+}
+
+.button-container button{
+  background-color: #AAAAAA;
+  border: transparent;
+  box-shadow: inset 1px 1px #fff, inset -1px -1px black;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.button-container button:active {
+  background-color: #888888;
+}

@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 80vh;
+}
+
+.container>* {
+  margin: 5px;
+  width: 20vw;
+  max-height: 80vh;
+}
+
+.container label {
+  margin: 0 auto;
+  position: sticky;
+  z-index: 1;
+  display: block;
+  top: 0;
+  text-align: center;
+  background-color: #00807F;
+  height: 5vh;
+  font-size: 22px;
+  color: azure;
+  font-weight: bold;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.button-wrapper button {
+  padding: 10px 20px;
+}
+
+.button-wrapper .droppable {
+  padding: 10px 20px;
+}
+
+.container > .group-wrapper:nth-child(1) .droppable {
+  background-color: red;
+}
+
+.container > .group-wrapper:nth-child(2) .droppable {
+  background-color: orange;
+}
+
+.container > .group-wrapper:nth-child(3) .droppable {
+  background-color: yellow;
+}
+
+.container > .group-wrapper:nth-child(4) .droppable {
+  background-color: green;
+}

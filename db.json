@@ -1,0 +1,25 @@
+{
+  "1": {
+    "Pendente": [
+      "Configurar ambiente de desenvolvimento",
+      "Criar componentes base do layout",
+      "Definir estrutura de pastas do projeto"
+    ],
+    "Iniciado": [
+      "Implementar sistema de login",
+      "Criar página inicial responsiva",
+      "Testar integração com API externa",
+      "Ajustar estilos CSS para header"
+    ],
+    "Revisando": [
+      "Revisar código do componente Sidebar",
+      "Corrigir bugs no formulário de cadastro",
+      "Aprimorar validação dos campos"
+    ],
+    "Finalizado": [
+      "Deploy da aplicação no servidor de testes",
+      "Configurar eslint e prettier",
+      "Documentar principais funcionalidades"
+    ]
+  }
+}

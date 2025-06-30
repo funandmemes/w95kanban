@@ -1,0 +1,10 @@
+.droppable {
+  min-height: 15vh;
+  height: 60vh;
+  padding: 20px 10px;
+  border: 1px solid black;
+  list-style-type: none;
+  border-radius: 10px;
+  overflow-y: auto;
+  scrollbar-gutter: stable both-edges;
+}
