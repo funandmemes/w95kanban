@@ -16,6 +16,8 @@ import Item from "./components/Item";
 import Board from "./components/Board";
 import { arrayMove, insertAtIndex, removeAtIndex } from "./utils/array";
 import Desktop from "./components/Desktop"
+import Footer from "./components/Footer"
+
 
 import "./App.css"
 
@@ -203,6 +205,7 @@ export function App() {
 
   return (
     <>
+      
       <Board>
         <Desktop></Desktop>
         <DndContext
@@ -233,12 +236,13 @@ export function App() {
             {activeId ? <Item id={activeId} dragOverlay /> : null}
           </DragOverlay>
         </DndContext>
+        
       </Board>
+      
       <div className="button-wrapper">
-        <button onClick={handleSaveClick}>
-          Salvar
-        </button>
+        
       </div>
+      <Footer></Footer>
     </>
   );
 }

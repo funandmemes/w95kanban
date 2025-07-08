@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    background-color: #AAAAAA;
+    height: 3vw;
+    width:100vw;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer button {
+    height: 90%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    justify-content: space-between;
+    margin: 0.2vw;
+}
+
+.footer img {
+    height: 90%
+}

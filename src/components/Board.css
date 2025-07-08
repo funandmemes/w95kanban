@@ -1,11 +1,9 @@
 .board {
   display: flex;
-  width: 100 vw;
+  width: 100vw;
   height: 80vh;
-  margin: 0 auto;
-  border: 1px solid black;
-  padding: 10px;
   background-color: #00807F;
   overflow-y: hidden;
   justify-content: space-between;
+  gap: 3vw;
 }
