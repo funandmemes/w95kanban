@@ -15,22 +15,12 @@ import Droppable from "./components/Droppable";
 import Item from "./components/Item";
 import Board from "./components/Board";
 import { arrayMove, insertAtIndex, removeAtIndex } from "./utils/array";
+import Desktop from "./components/Desktop"
 
 import "./App.css"
-const state = {
-  "group1": [],
-  "group2": [],
-  "group3": [],
-  "group4": []
-};
-const state3 = {
-  "group1": ["3", "4"],
-  "group2": ["1", "2"],
-  "group3": ["7", "8", "9"],
-  "group4": ["12", "13", "14"]
-}
+
 export function App() {
-  const [itemGroups, setItemGroups] = useState(state);
+  const [itemGroups, setItemGroups] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -214,6 +204,7 @@ export function App() {
   return (
     <>
       <Board>
+        <Desktop></Desktop>
         <DndContext
           sensors={sensors}
           onDragStart={handleDragStart}

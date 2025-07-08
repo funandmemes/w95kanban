@@ -36,3 +36,5 @@ coverage/
 # arquivos de lock (opcional ignorar)
 # package-lock.json
 # yarn.lock
+
+icons/
