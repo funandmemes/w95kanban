@@ -1,7 +1,7 @@
 .board {
   display: flex;
-  width: 100vw;
-  height: 80vh;
+  height: 90%;
+  width: 100%;
   background-color: #00807F;
   overflow-y: hidden;
   justify-content: space-between;

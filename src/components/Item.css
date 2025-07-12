@@ -1,44 +1,67 @@
 .item {
   border: transparent;
-  background-color: #AAAAAA;
+  background-color: #aaaaaa;
   display: flex;
   flex-direction: column;
-  width: auto;
-  aspect-ratio: 2 / 1;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2/1;
   margin-bottom: 10px;
-  box-shadow: inset 1px 1px #fff, inset -1px -1px black;
+  box-shadow: inset -2px -2px black, inset 2px 2px #fff, inset -4px -4px #8D8D8D;
   justify-content: space-between;
 }
 
 .content {
-  margin: 5px;
-  font-size: 20px;
+  margin: 5%;
+  font-size: 1.5rem;
   cursor: text;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .title {
   background-color: #000080;
   color: white;
-  display:flex;
+  display: flex;
   border: transparent;
+  height: 23%;
   width: auto;
   box-sizing: border-box;
-  margin: 3px;
+  margin: 2%;
   align-items: center;
   justify-content: center;
   cursor: grab;
-
 }
 
+#itemicon {
+  height: 80%;
+  width: auto;
+  margin: 3px
+}
 
 #closebtn {
+  display: flex;
+  height: 80%;
+  width: auto;
+  aspect-ratio: 1/1;
   margin-left: auto;
   cursor: pointer;
   background-color: #AAAAAA;
   border: transparent;
   margin-right: 3px;
-  box-shadow: inset 1px 1px #fff, inset -1px -1px black;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset -2px -2px black, inset 2px 2px #fff, inset -4px -4px #8D8D8D;
   transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+#closebtn label {
+  background-color: transparent;
+  font-size: 12px;
+  color: black;
+  aspect-ratio: 1/1;
+  height: auto;
+  width: auto;
 }
 
 #closebtn:active {
@@ -46,22 +69,21 @@
 }
 
 #itemicon {
-  padding: 2px
-}
-.button-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  box-sizing: border-box;
-  margin: 5px;
-  gap: 3px;
+  padding: 2%
 }
 
-.button-container button{
+.button-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding: 3% 10%;
+}
+
+.button-container button {
   background-color: #AAAAAA;
   border: transparent;
-  box-shadow: inset 1px 1px #fff, inset -1px -1px black;
-  font-size: 15px;
+  box-shadow: inset -2px -2px black, inset 2px 2px #fff, inset -4px -4px #8D8D8D;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.2s, box-shadow 0.2s;
 }

@@ -1,16 +1,17 @@
 .desktop img{
-    width:3vw;
+    width: 40%;
     height: auto;
 }
 
 .desktop {
-    width:10%;
+    width: 10vw;
     display: flex;
     height:100%;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 3vh;
+    padding-top: 1vh;
+    flex-grow: 0;
 }
 
 .desktop > * {
@@ -18,11 +19,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    width: 10vw;
 }
 
 .desktop label {
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 0.5vw;
+    padding-bottom: 2vw;
     color: white;
     text-align: center;
+    font-size: 1.3vw;
+}
+@media (orientation: portrait) {
+    .desktop {
+    width: 30vw;
+}
+    .desktop img{
+    width: 80%;
+    height: auto;
+}
 }

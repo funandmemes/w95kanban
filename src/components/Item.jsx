@@ -23,13 +23,13 @@ const Item = ({
     <>
       <div className="item">
         <div className="title"  {...listeners} {...attributes}>
-          <img id="itemicon" width="20px" height="20px" src="https://img.icons8.com/ios-filled/50/FFFFFF/pixel-cat.png"/>
+          <img id="itemicon" src="/assets/info.ico"/>
           <button
             id="closebtn"
             onClick={() => onDelete(containerId, id)}
             onMouseDown={handleButtonMouseDown}
             onTouchStart={handleButtonMouseDown}
-          >x</button>
+          ><label>X</label></button>
         </div>
         <div className="content">{id}</div>
         <div className="button-container">

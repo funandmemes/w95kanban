@@ -204,46 +204,44 @@ export function App() {
   };
 
   return (
-    <>
-      
-      <Board>
+    <div className="page">
         <Desktop></Desktop>
-        <DndContext
-          sensors={sensors}
-          onDragStart={handleDragStart}
-          onDragCancel={handleDragCancel}
-          onDragOver={handleDragOver}
-          onDragEnd={handleDragEnd}
-        >
-          <div className="container">
-            {Object.keys(itemGroups).map((group) => (
-              <div className={`group-wrapper ${group}`}>
-                <label>{group}</label>
-                <Droppable
-                  id={group}
-                  items={itemGroups[group]}
-                  activeId={activeId}
-                  onMoveNext={handleMoveNext}
-                  onMoveBack={handleMoveBack}
-                  onDelete={handleDelete}
-                  key={group}
-                  containerId={group}
-                />
-              </div>
-            ))}
-          </div>
-          <DragOverlay>
-            {activeId ? <Item id={activeId} dragOverlay /> : null}
-          </DragOverlay>
-        </DndContext>
-        
-      </Board>
+          
+          <DndContext
+            sensors={sensors}
+            onDragStart={handleDragStart}
+            onDragCancel={handleDragCancel}
+            onDragOver={handleDragOver}
+            onDragEnd={handleDragEnd}
+          >
+            <div className="container">
+              {Object.keys(itemGroups).map((group) => (
+                <div className={`group-wrapper ${group}`}>
+                  <label>{group}</label>
+                  <Droppable
+                    id={group}
+                    items={itemGroups[group]}
+                    activeId={activeId}
+                    onMoveNext={handleMoveNext}
+                    onMoveBack={handleMoveBack}
+                    onDelete={handleDelete}
+                    key={group}
+                    containerId={group}
+                  />
+                </div>
+              ))}
+            </div>
+            <DragOverlay>
+              {activeId ? <Item id={activeId} dragOverlay /> : null}
+            </DragOverlay>
+          </DndContext> 
+          
       
       <div className="button-wrapper">
-        
+            
       </div>
       <Footer></Footer>
-    </>
+    </div>
   );
 }
 

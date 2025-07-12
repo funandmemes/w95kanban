@@ -1,64 +1,56 @@
-html, body {
+html,
+body {
   background-color: #00807F;
   margin: 0;
   padding: 0;
 }
+
+.page {
+  display: flex;
+}
+
 .container {
   display: flex;
-  align-items: center;
+  width: 80rem;
   justify-content: flex-start;
-  height: 80vh;
-  flex-grow: 1;
   gap: 1vw;
 }
 
 .container>* {
-  margin: 5px;
-  width: 10vw;
-  max-height: 80vh;
-  flex-grow: 1;
-} 
-
-.container label {
-  margin: 0 auto;
-  position: sticky;
-  z-index: 1;
-  display: block;
-  top: 0;
-  text-align: center;
-  background-color: #00807F;
-  height: 5vh;
-  font-size: 22px;
-  color: azure;
-  font-weight: bold;
-}
-
-.button-wrapper {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-}
-
-.button-wrapper button {
-  padding: 10px 20px;
+  width: 100%;
+  max-height: 90vh;
 }
 
 .button-wrapper .droppable {
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 
-.container > .group-wrapper:nth-child(1) .droppable {
+.container>.group-wrapper:nth-child(1) .droppable {
   background-color: red;
 }
 
-.container > .group-wrapper:nth-child(2) .droppable {
+.container>.group-wrapper:nth-child(2) .droppable {
   background-color: orange;
 }
 
-.container > .group-wrapper:nth-child(3) .droppable {
+.container>.group-wrapper:nth-child(3) .droppable {
   background-color: yellow;
 }
 
-.container > .group-wrapper:nth-child(4) .droppable {
+.container>.group-wrapper:nth-child(4) .droppable {
   background-color: green;
+}
+
+@media (orientation: portrait) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: auto;
+  }
+
+  .container>* {
+    width: 40%;
+    height: 50%;
+    max-height: 100%;
+  }
 }
